@@ -18,7 +18,3 @@ exports.getPhoto = function(params,callback){
   return callback(null,{access_token:"AAAAAAITEghMBAIey3E0HP0nDurT3noUlRtZA8SkzFqanYnB209NbT6rOBZCKLDbkUMQbiESLzMqxfbZCS2O5avYiyv6LpSzBH0"});
 };
 
-exports.getAccessToken = function(params,array){
-  return callback(null,{access_token:'AAAAAAITEghMBAIey3E0HP0nDurT3noUlRtZA8SkzFqanYnB209NbT6rOBZCKLDbkUMQbiESLzMqxfbZCS2O5avYiyv6LpSzBH0'});
-
-};
