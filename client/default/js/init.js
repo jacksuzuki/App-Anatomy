@@ -22,12 +22,16 @@ $fh.ready(function () {
     },
   function(res){
     console.log("success"+res);
-      $("#myimg").attr('src', res.photo);
+      prepare_picture(res.access_token);
     },
   function(msg, err){
     console.log("error"+msg);
     }
   );
+  
+  function prepare_picture(access_token){
+    
+  }
 
 });
 
