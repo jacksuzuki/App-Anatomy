@@ -5,12 +5,12 @@ $fh.ready(function () {
     act: "getPhoto",
     req: {}    
     },
-  function(imgurl){
-    console.log("success"+imgurl);
-      $("#myimg").attr('src', imgurl);
+  function(res){
+    console.log("success"+res);
+      $("#myimg").attr('src', res.photo);
     },
-  function(imgurl){
-    console.log("error"+imgurl);
+  function(msg, err){
+    console.log("error"+msg);
      $("#myimg").attr('src',"hoge");
     }
   );
