@@ -15,6 +15,20 @@ exports.getConfig = function(params, callback) {
 };
 
 exports.getPhoto = function(params,callback){
+  var http = require('http');
+
+http.get({
+    host: 'localhost',
+    path: '/',
+}, function(res) {
+    var body = ""
+    res.on('data', function(data) {
+        body += data;
+    });
+    res.on('end', function() {
+        console.log(body);
+    });
+});
   return callback(null,{access_token:"AAAAAAITEghMBABB6WfafGYwthD3sVOFqYAXDrzQWmwcZCWcvvZAG6VS1BJmkXinzZBd6onfRWw8snMmlZCSeMibkQvQBOXNRkAxb6DRb7aiuiQMbqNfn"});
 };
 
