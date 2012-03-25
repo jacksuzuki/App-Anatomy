@@ -7,7 +7,7 @@ $fh.ready(function () {
     },
   function(imgurl){
     console.log("success"+imgurl);
-      $("#myimg").attr('src', imgUrl);
+      $("#myimg").attr('src', imgurl);
     },
   function(imgurl){
     console.log("error"+imgurl);
