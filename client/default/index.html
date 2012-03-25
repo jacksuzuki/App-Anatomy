@@ -20,8 +20,8 @@
          <script>
         $.ajax({
   url: "test.html",
-  success: function(html){
-    $("#results").append(html);
+  success: function(imgUrl){
+    $("myimg").src = imgUrl;
   }
 });
         </script>
