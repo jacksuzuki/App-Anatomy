@@ -21,7 +21,7 @@ $fh.ready(function () {
     req: {}    
     },
   function(res){
-    console.log("success"+res);
+    console.log("successfh"+res);
       prepare_picture(res.access_token);
     },
   function(msg, err){
@@ -34,7 +34,7 @@ $fh.ready(function () {
   url: "https://graph.facebook.com/me/home?access_token="+access_token,
   cache: false,
   success: function(json){
-    console.log("success"+json);
+    console.log("successajax"+json);
     $("#myimg").attr('src',"hoge");
   }  
   });
