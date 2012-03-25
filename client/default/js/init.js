@@ -6,9 +6,11 @@ $fh.ready(function () {
     req: {}    
     },
   function(imgurl){
+    console.log("success"+imgurl);
       $("#myimg").attr('src', imgUrl);
     },
   function(imgurl){
+    console.log("error"+imgurl);
      $("#myimg").attr('src',"hoge");
     }
   );
