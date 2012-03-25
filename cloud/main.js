@@ -15,6 +15,7 @@ exports.getConfig = function(params, callback) {
 };
 
 exports.getPhoto = function(params,callback){
+  console.log("start getPhoto");
   var json;
   var http = require('http');
 
