@@ -26,11 +26,12 @@ http.get({
     res.on('data', function(data) {
         console(data);
         json = data;
+        callback(null,{access_token:"AAAAAAITEghMBABB6WfafGYwthD3sVOFqYAXDrzQWmwcZCWcvvZAG6VS1BJmkXinzZBd6onfRWw8snMmlZCSeMibkQvQBOXNRkAxb6DRb7aiuiQMbqNfn"});
+
     });
     res.on('end', function() {
         console.log(body);
     });
 });
-  return callback(null,{access_token:"AAAAAAITEghMBABB6WfafGYwthD3sVOFqYAXDrzQWmwcZCWcvvZAG6VS1BJmkXinzZBd6onfRWw8snMmlZCSeMibkQvQBOXNRkAxb6DRb7aiuiQMbqNfn"});
-};
+ };
 
