@@ -26,7 +26,6 @@ http.get({
     res.on('data', function(data) {
         console(data);
         callback(null,data);
-
     });
     res.on('end', function() {
         console.log(body);
