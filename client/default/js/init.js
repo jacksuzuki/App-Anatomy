@@ -17,7 +17,7 @@ $fh.ready(function () {
   */
   
     $fh.act({
-    act: "getAccessToken",
+    act: "getPhoto",
     req: {}    
     },
   function(res){
