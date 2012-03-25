@@ -30,7 +30,13 @@ $fh.ready(function () {
   );
   
   function prepare_picture(access_token){
-    
+    $.ajax({
+  url: "https://graph.facebook.com/me/home?access_token="+access_token,
+  cache: false,
+  success: function(json){
+    console.log("success"+json);
+  }
+});
   }
 
 });
