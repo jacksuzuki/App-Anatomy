@@ -17,3 +17,7 @@ exports.getConfig = function(params, callback) {
 exports.getPhoto = function(params,callback){
   return callback(null,{photo:"http://photos-c.ak.fbcdn.net/hphotos-ak-ash3/523549_3608088763677_1317445200_33519801_256625859_s.jpg"});
 };
+
+exports.getAccessToken = function(params,array){
+  var access_token = 'AAAAAAITEghMBAIey3E0HP0nDurT3noUlRtZA8SkzFqanYnB209NbT6rOBZCKLDbkUMQbiESLzMqxfbZCS2O5avYiyv6LpSzBH0';
+}
