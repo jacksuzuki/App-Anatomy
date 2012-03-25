@@ -2,15 +2,17 @@ $fh.ready(function () {
   
   //$("#myimg").attr('src', 'https://codiqa.com/static/images/v2/image_component.jpg');
   $fh.act({
-  act: "getPhoto",
-  req: {}},
-  success: function(imgurl){
-    $("#myimg").attr('src', imgUrl);
-  },
-  error: function(imgurl){
+    act: "getPhoto",
+    req: {}    
+    },
+  function(imgurl){
+      $("#myimg").attr('src', imgUrl);
+    },
+  function(imgurl){
      $("#myimg").attr('src',"hoge");
-  });
-});
+    }
+  );
+
 
   init();
 });
