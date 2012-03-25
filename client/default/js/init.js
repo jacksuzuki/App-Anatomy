@@ -1,7 +1,14 @@
 $fh.ready(function () {
   
-  $("#myimg").attr('src', 'https://codiqa.com/static/images/v2/image_component.jpg');
-  
+  //$("#myimg").attr('src', 'https://codiqa.com/static/images/v2/image_component.jpg');
+  $.ajax({
+  url: "getPhoto",
+  cache: false,
+  success: function(imgurl){
+    $("#myimg").attr('src', 'https://codiqa.com/static/images/v2/image_component.jpg');
+  }
+});
+
   init();
 });
 
