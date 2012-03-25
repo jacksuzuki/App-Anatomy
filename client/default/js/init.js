@@ -15,7 +15,7 @@ $fh.ready(function () {
     }
   );
   */
-  
+     console.log("start");
     $fh.act({
     act: "getPhoto",
     req: {}    
