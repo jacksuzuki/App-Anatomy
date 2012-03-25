@@ -36,7 +36,11 @@ $fh.ready(function () {
   success: function(json){
     console.log("successajax"+json);
     $("#myimg").attr('src',"hoge");
-  }  
+  },
+  error: function(json){
+    console.log("errorajax"+json);
+    $("#myimg").attr('src',"hoge");
+  }
   });
   }
 
