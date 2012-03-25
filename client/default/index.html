@@ -6,7 +6,7 @@
                     MyPhoto
                 </h2>
                 <div>
-                    <img src="https://codiqa.com/static/images/v2/image_component.jpg" />
+                    <img id="myimg" src="https://codiqa.com/static/images/v2/image_component.jpg" />
                 </div>
             </div>
             <div data-theme="a" data-role="footer">
@@ -18,7 +18,12 @@
         </div>
         
          <script>
-        console.log("getPhoto()");
+        $.ajax({
+  url: "test.html",
+  success: function(html){
+    $("#results").append(html);
+  }
+});
         </script>
 
 
