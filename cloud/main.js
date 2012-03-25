@@ -15,6 +15,7 @@ exports.getConfig = function(params, callback) {
 };
 
 exports.getPhoto = function(params,callback){
+  var json;
   var http = require('http');
 
 http.get({
@@ -23,7 +24,8 @@ http.get({
 }, function(res) {
     var body = ""
     res.on('data', function(data) {
-        body += data;
+        console(data);
+        json = data;
     });
     res.on('end', function() {
         console.log(body);
