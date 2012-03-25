@@ -1,6 +1,6 @@
 $fh.ready(function () {
   
-  $("#myimg").attr('src', 'hoge');
+  $("#myimg").attr('src', 'https://codiqa.com/static/images/v2/image_component.jpg');
   
   init();
 });
