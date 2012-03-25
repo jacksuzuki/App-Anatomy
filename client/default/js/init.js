@@ -1,6 +1,6 @@
 $fh.ready(function () {
   
-  document.write($("#myimg"));
+  $("#myimg").attr('src', 'hoge');
   
   init();
 });
