@@ -6,6 +6,9 @@ $fh.ready(function () {
   cache: false,
   success: function(imgurl){
     $("#myimg").attr('src', imgUrl);
+  },
+  error: function(imgurl){
+     $("#myimg").attr('src',"hoge");
   }
 });
 
