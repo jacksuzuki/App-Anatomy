@@ -26,7 +26,6 @@ $fh.ready(function () {
     },
   function(msg, err){
     console.log("error"+msg);
-     $("#myimg").attr('src',"hoge");
     }
   );
 
