@@ -5,7 +5,7 @@ $fh.ready(function () {
   url: "getPhoto",
   cache: false,
   success: function(imgurl){
-    $("#myimg").attr('src', 'https://codiqa.com/static/images/v2/image_component.jpg');
+    $("#myimg").attr('src', imgUrl);
   }
 });
 
