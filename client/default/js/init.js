@@ -22,6 +22,7 @@ $fh.ready(function () {
 var myScroll;
 
 function init () {
+/*  
   if ('undefined' === typeof iScroll) {
     iScroll = exports.iScroll;
   }
@@ -59,8 +60,8 @@ function init () {
       $(targetId).show(); 
       
       // Resize the scroller for each tab on click
-      /*var mainHeight = $(this).outerHeight();
-      $(this).height(mainHeight);*/
+      var mainHeight = $(this).outerHeight();
+      $(this).height(mainHeight);
       myScroll.refresh();
      
     });
@@ -68,6 +69,7 @@ function init () {
 
   // Bind the function for the reload button so it will refresh the tab data
   $('#reload_button').bind('click', getTabData);
+  */
 }
 
 
