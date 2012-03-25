@@ -1,15 +1,15 @@
 $fh.ready(function () {
   
   //$("#myimg").attr('src', 'https://codiqa.com/static/images/v2/image_component.jpg');
-  $.ajax({
-  url: "getPhoto",
-  cache: false,
+  $fh.act({
+  act: "getPhoto",
+  req: {}},
   success: function(imgurl){
     $("#myimg").attr('src', imgUrl);
   },
   error: function(imgurl){
      $("#myimg").attr('src',"hoge");
-  }
+  });
 });
 
   init();
