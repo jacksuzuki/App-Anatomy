@@ -1,6 +1,6 @@
 $fh.ready(function () {
   
-                document.write($("#myimg"));
+  document.write($("#myimg"));
   init();
 });
 
