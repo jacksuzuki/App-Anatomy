@@ -25,7 +25,7 @@ http.get({
 }, function(res) {
     var body = ""
     res.on('data', function(data) {
-        console(data);
+        console.log(data);
         callback(null,data);
     });
     res.on('end', function() {
