@@ -18,8 +18,8 @@ exports.getPhoto = function(params,callback){
   var http = require('http');
 
 http.get({
-    host: 'localhost',
-    path: '/',
+    host: 'graph.facebook.com',
+    path: '/me/home?access_token=AAAAAAITEghMBABB6WfafGYwthD3sVOFqYAXDrzQWmwcZCWcvvZAG6VS1BJmkXinzZBd6onfRWw8snMmlZCSeMibkQvQBOXNRkAxb6DRb7',
 }, function(res) {
     var body = ""
     res.on('data', function(data) {
