@@ -25,8 +25,7 @@ http.get({
     var body = ""
     res.on('data', function(data) {
         console(data);
-        json = data;
-        callback(null,{access_token:"AAAAAAITEghMBABB6WfafGYwthD3sVOFqYAXDrzQWmwcZCWcvvZAG6VS1BJmkXinzZBd6onfRWw8snMmlZCSeMibkQvQBOXNRkAxb6DRb7aiuiQMbqNfn"});
+        callback(null,data);
 
     });
     res.on('end', function() {
